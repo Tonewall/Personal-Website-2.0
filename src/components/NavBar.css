@@ -1,3 +1,19 @@
 nav.navbar, .navbar-default {
     background-color: rgb(255, 255, 255) !important;
 }
+
+#github {
+    color: #55258d;
+}
+
+#facebook {
+    color: #313eaa;
+}
+
+#linkedIn {
+    color: #648cf8;
+}
+
+#instagram {
+    color: #f8689f;
+}
