@@ -1,5 +1,7 @@
 import React, {Component} from "react";
 import "./NavBar.css";
+import Resume from '../Resume.pdf';
+
 
 
 
@@ -8,7 +10,7 @@ export default class NavBar extends Component {
   render() {
     return (
       <div className="shadow p-3 mb-5 bg-white">
-  <nav className="navbar navbar-expand navbar-light bg-light">
+  <nav className="navbar navbar-expand-md navbar-light bg-light">
         <a className="navbar-brand" href="/">Home</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -17,10 +19,13 @@ export default class NavBar extends Component {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
         <li className="nav-item">
-          <a className="nav-link" href="#">Bio<span className="sr-only"></span></a>
+          <a className="nav-link" href="/bio">Bio</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Projects</a>
+          <a className="nav-link" href="/projects">Projects</a>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link" href={Resume} target="_blank">Resume</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -36,7 +41,7 @@ export default class NavBar extends Component {
         </li>
       </ul>
       <div class="inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0">Contact</button>
+      <button class="btn btn-outline-success my-2 my-sm-0" href="/contact">Contact</button>
     </div>
     </div>
   </nav>
