@@ -1,58 +1,30 @@
-footer{
-    color: white;
-  }
-  footer a{
-    color: #FFFFFF;
-  }
-  footer a:hover{
-    color: white;
-  }
-  
-  .footer-bottom{
-    background: #FFCC00;
-    padding: 2em;
-    color:#000000;
-  }
-  .footer-top{
-    background: #666666;
-  }
-  .footer-middle{
-    background: #666666;
-    padding-top: 2em;
-    color: white;
-  }
-  /**Sub Navigation**/
-  .subnavigation-container{
-    background: #3d6277;
-  }
-  .subnavigation .nav-link{
-    color: white;
-    font-weight: bold;
-  }
-  .subnavigation-container{
-    text-align: center;
-  }
-  .subnavigation-container .navbar{
-    display: inline-block;
-    margin-bottom: -6px; /* Inline-block margin offffset HACK -Gilron */
-  }
-  .col-subnav a{
-    padding: 1rem 1rem;
-    color: white;
-    font-weight: bold;
-  }
-  .col-subnav .active{
-    border-top:5px solid orange;
-    background: white;
-    color: black;
-  }
-  
-  body {
-    /* Margin bottom by footer height */
-    margin-bottom: 0px;
-  
-  }
-  
-  .mainfooter {
-  
-  }
+
+.footer-top{
+  padding-top: 30px;
+  padding-bottom: 10px;
+  background: #a1a1a1;
+  color: #ffffff;
+}
+
+#sm-footer {
+  font-size: 15px;
+  color: #ffffff;
+  margin:auto;
+}
+#sm-footer-title {
+  font-size: 17px;
+  color: #ffffff;
+  margin:auto;
+}
+#footer-columns {
+  margin-top: 20px;
+}
+#footer-top {
+  margin-bottom: 30px;
+}
+.footer-contact-title {
+  font-size: 20px;
+}
+.footer-contact-infos {
+  font-size: 12px;
+}

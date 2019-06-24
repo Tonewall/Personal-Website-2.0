@@ -68,7 +68,7 @@ export default class NavBar extends Component {
         </li>
       </ul>
       <div class="inline my-2 my-lg-0">
-      <button class="btn btn-outline-success my-2 my-sm-0" href="/contact">Contact</button>
+      <button class="btn btn-outline-primary my-2 my-sm-0" href="/contact">Contact</button>
     </div>
     </div>
   </nav>
