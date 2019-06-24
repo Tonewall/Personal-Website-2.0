@@ -1,9 +1,19 @@
-html, body {
-    margin:0;
-    padding: 0;
-}
-.carouselStyle {
-    margin-top: -20px;
-    text-align:center;
+
+.card {
+    width: 100%;
+    margin-bottom: 50px;
+    margin-left: 0;
 }
 
+.name-home {
+    font-weight: bold;
+    font-size: 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    font-family: Permanent Marker;
+    margin-top: 110px;
+}
+.instaButton {
+    margin-top:10px;
+}

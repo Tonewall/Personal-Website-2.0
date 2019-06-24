@@ -9,8 +9,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-      <div className="shadow p-3 mb-5 bg-white">
-  <nav className="navbar navbar-expand-md navbar-light bg-light">
+  <nav className="navbar shadow p-3 mb-5 fixed-top navbar-expand-md navbar-light bg-light">
         <a className="navbar-brand" href="/">Home</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -18,9 +17,6 @@ export default class NavBar extends Component {
   
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
-        <li className="nav-item">
-          <a className="nav-link" href="/bio">Bio</a>
-        </li>
         <li className="nav-item">
           <a className="nav-link" href="/projects">Projects</a>
         </li>
@@ -67,13 +63,15 @@ export default class NavBar extends Component {
           </div>
         </li>
       </ul>
-      <div class="inline my-2 my-lg-0">
-      <button class="btn btn-outline-primary my-2 my-sm-0" href="/contact">Contact</button>
+      <div className="navName d-none d-lg-block">
+        Geunyoung (Tony) Choi
+      </div>
+      <div className="inline my-2 my-lg-0">
+      <button className="btn btn-outline-primary my-2 my-sm-0" href="/contact">Contact</button>
     </div>
     </div>
   </nav>
   
-      </div>
     );
   }
   

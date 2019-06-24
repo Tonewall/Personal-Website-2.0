@@ -9,7 +9,7 @@ class Footer extends React.Component {
           <div className="container">
             <div className="row" id="footer-top">
               <div className="col-md-8" id="footer-top">
-                This site is made as a personal project using ReactJS framework.
+                This site is made as a personal project. All of the code has been written by me using jQuery and Bootstrap libraries along with ReactJS framework.
               </div>
               
               <div className="col-md-4" id="footer-columns">

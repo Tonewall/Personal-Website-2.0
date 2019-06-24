@@ -63,3 +63,13 @@ nav.navbar, .navbar-default {
 #btn-id{
     background: #ffffffda;
 }
+
+.navbar-brand {
+    margin-left: 40px;
+}
+.navName {
+    font-family: "Oleo Script";
+    font-size: 35px;
+    margin:auto;
+    margin-left: 0px;
+}
