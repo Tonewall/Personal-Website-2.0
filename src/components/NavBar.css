@@ -3,17 +3,63 @@ nav.navbar, .navbar-default {
 }
 
 #github {
-    color: #55258d;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(#c9a1db, #a064bb, #570080);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
+#github:hover {
+    background: linear-gradient(#786183, #68407a, #320049);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 #facebook {
-    color: #313eaa;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(#dcdfff,#626ae2, #1420c5);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#facebook:hover {
+    background: linear-gradient(#7d7f92,#363b80, #090f64);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
+
 #linkedIn {
-    color: #648cf8;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(#c7e6ff,#6ab0e9, #1569ad);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#linkedIn:hover {
+    background: linear-gradient(#91a8bb,#5084af, #0d4572);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 
 #instagram {
-    color: #f8689f;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(#ffeb3a,#ff733b, #731cff, #161aff);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#instagram:hover {
+    background: linear-gradient(#e7d63b,#bd3b1b, #2729a1, #8b0085);
+    -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#icon {
+    margin-bottom: 2px;
+}
+
+#btn-id{
+    background: #ffffffc5;
 }

@@ -47,12 +47,21 @@ export default class NavBar extends Component {
           <div className="dropdown-menu" aria-labelledby="navbarDropdown"
           id="btn-id">
             <a id="instagram" className="dropdown-item" href="https://www.instagram.com/tonewalljackson/" target="_blank">
-              <img src="../images/instagram.png" width="30%" height="100%"></img>
+              <img src={require("../images/instagram.png")} id="icon" width="30px" height="30px"></img>
               Instagram
             </a>
-            <a id="linkedIn" className="dropdown-item" href="https://www.linkedin.com/in/tony-choi-973675ab/" target="_blank">LinkedIn</a>
-            <a id="github" className="dropdown-item" href="https://github.com/Tonewall" target="_blank">GitHub</a>
-            <a id="facebook" className="dropdown-item facebook" href="https://www.facebook.com/tony.choi.52090" target="_blank">Facebook</a>
+            <a id="linkedIn" className="dropdown-item" href="https://www.linkedin.com/in/tony-choi-973675ab/" target="_blank">
+              <img src={require("../images/linkedin.png")} id="icon" width="20px" height="20px"></img>
+              {' '} LinkedIn
+            </a>
+            <a id="github" className="dropdown-item" href="https://github.com/Tonewall" target="_blank">
+              <img src={require("../images/github.png")} id="icon" width="23px" height="23px"></img>
+              {' '} GitHub
+            </a>
+            <a id="facebook" className="dropdown-item facebook" href="https://www.facebook.com/tony.choi.52090" target="_blank">
+              <img src={require("../images/facebook.png")} id="icon" width="20px" height="20px"></img>
+              {' '} Facebook
+            </a>
             
             
           </div>

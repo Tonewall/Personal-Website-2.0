@@ -6,7 +6,7 @@ class home extends React.Component {
   render() {
     return (
       <div className="container bgStyle">
-        <img src="../images/instagram.png" width="30%" height="30%"></img>
+        <img src={require("../images/instagram.png")} width="30px" height="30px"></img>
       </div>
     );
   }
