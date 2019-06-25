@@ -1,6 +1,9 @@
 import React, {Component} from "react";
 import "./NavBar.css";
 import Resume from '../Resume.pdf';
+import { Link } from 'react-router-dom'
+
+
 
 
 
@@ -21,7 +24,7 @@ export default class NavBar extends Component {
           <a className="nav-link" href="/projects">Projects</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href={Resume} target="_blank">Resume</a>
+          <a className="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
         </li>
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -42,20 +45,20 @@ export default class NavBar extends Component {
           
           <div className="dropdown-menu" aria-labelledby="navbarDropdown"
           id="btn-id">
-            <a id="instagram" className="dropdown-item" href="https://www.instagram.com/tonewalljackson/" target="_blank">
-              <img src={require("../images/instagram.png")} id="icon" width="30px" height="30px"></img>
+            <a id="instagram" className="dropdown-item" href="https://www.instagram.com/tonewalljackson/" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/instagram.png")} alt="instagram" id="icon" width="30px" height="30px"></img>
               Instagram
             </a>
-            <a id="linkedIn" className="dropdown-item" href="https://www.linkedin.com/in/tony-choi-973675ab/" target="_blank">
-              <img src={require("../images/linkedin.png")} id="icon" width="20px" height="20px"></img>
+            <a id="linkedIn" className="dropdown-item" href="https://www.linkedin.com/in/tony-choi-973675ab/" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/linkedin.png")} alt="Linked In" id="icon" width="20px" height="20px"></img>
               {' '} LinkedIn
             </a>
-            <a id="github" className="dropdown-item" href="https://github.com/Tonewall" target="_blank">
-              <img src={require("../images/github.png")} id="icon" width="23px" height="23px"></img>
+            <a id="github" className="dropdown-item" href="https://github.com/Tonewall" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/github.png")} alt="GitHub" id="icon" width="23px" height="23px"></img>
               {' '} GitHub
             </a>
-            <a id="facebook" className="dropdown-item facebook" href="https://www.facebook.com/tony.choi.52090" target="_blank">
-              <img src={require("../images/facebook.png")} id="icon" width="20px" height="20px"></img>
+            <a id="facebook" className="dropdown-item facebook" href="https://www.facebook.com/tony.choi.52090" target="_blank" rel="noopener noreferrer">
+              <img src={require("../images/facebook.png")} alt="Facebook" id="icon" width="20px" height="20px"></img>
               {' '} Facebook
             </a>
             
@@ -67,7 +70,10 @@ export default class NavBar extends Component {
         Geunyoung (Tony) Choi
       </div>
       <div className="inline my-2 my-lg-0">
-      <button className="btn btn-outline-primary my-2 my-sm-0" href="/contact">Contact</button>
+        <Link to="/contact">
+        <button className="btn btn-outline-primary my-2 my-sm-0" href="/contact">Contact</button>
+        </Link>
+      
     </div>
     </div>
   </nav>

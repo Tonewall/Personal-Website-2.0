@@ -36,16 +36,16 @@ class home extends React.Component {
                       <video className="d-block w-100" src={require("../images/carousel-0.mp4")} autoPlay={true} loop={true} muted></video>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" src={require("../images/carousel-1.jpg")}></img>
+                      <img className="d-block w-100" alt="carousel 1" src={require("../images/carousel-1.jpg")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" src={require("../images/carousel-2.jpg")}></img>
+                      <img className="d-block w-100" alt="carousel 2" src={require("../images/carousel-2.jpg")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" src={require("../images/carousel-3.jpg")}></img>
+                      <img className="d-block w-100" alt="carousel 3" src={require("../images/carousel-3.jpg")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" src={require("../images/carousel-4.jpg")}></img>
+                      <img className="d-block w-100" alt="carousel 4" src={require("../images/carousel-4.jpg")}></img>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -57,16 +57,25 @@ class home extends React.Component {
                     <span className="sr-only">Next</span>
                   </a>
                 </div>
-                <a href="https://www.instagram.com/tonewalljackson/" target="_blank" className="btn btn-primary instaButton">Instagram</a>
+                <a href="https://www.instagram.com/tonewalljackson/" target="_blank" rel="noopener noreferrer" className="btn btn-primary instaButton">Instagram</a>
               </div>
             </div>
           </div>
-          <div className="col-md-4">
-            This webiste has been written entirely using JavaScript, HTML5, and CSS3 along with Bootstrap and JQuery Libraries and ReactJS framework.
+          <div className="col-md-4" id="sideBar">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">About This Website</h5>
+                <hr></hr>
+                <p class="card-text">This webiste has been written entirely using JavaScript, HTML5, and CSS3 along with Bootstrap and JQuery Libraries and ReactJS framework. This is a fully renovated version of my first website which was all hardcoded without using any libraries or frameworks. While it was a great project to foster my knowledge with CSS3, it was very rudimentary</p>
+                <a href="https://github.com/Tonewall/Personal-Website-2.0" class="btn btn-dark">GitHub Repo</a>
+              </div>
+            </div>
           </div>
         </div>
-        <div className="row">
-          Skills
+        <div className="row" id="skills">
+          <div className="skillsTitle">
+            Skills
+          </div>
 
         </div>
       </div>

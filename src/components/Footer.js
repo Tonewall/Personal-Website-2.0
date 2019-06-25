@@ -33,10 +33,10 @@ class Footer extends React.Component {
                   </div>
                 </div>
                 <div className="row">
-                  <a id="sm-footer" href="https://www.instagram.com/tonewalljackson/" target="_blank">Instagram</a>
-                  <a id="sm-footer" href="https://www.linkedin.com/in/tony-choi-973675ab/" target="_blank">LinkedIn</a>
-                  <a id="sm-footer" href="https://github.com/Tonewall" target="_blank">GitHub</a>
-                  <a id="sm-footer" href="https://www.facebook.com/tony.choi.52090" target="_blank">Facebook</a>
+                  <a id="sm-footer" href="https://www.instagram.com/tonewalljackson/" target="_blank" rel="noopener noreferrer">Instagram</a>
+                  <a id="sm-footer" href="https://www.linkedin.com/in/tony-choi-973675ab/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a id="sm-footer" href="https://github.com/Tonewall" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a id="sm-footer" href="https://www.facebook.com/tony.choi.52090" target="_blank" rel="noopener noreferrer">Facebook</a>
                 </div>
               </div>
             </div>
