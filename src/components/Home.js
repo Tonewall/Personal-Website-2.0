@@ -93,13 +93,22 @@ class home extends React.Component {
   render() {
     return (
       <div className="container bgStyle">
+        <div className="upper">
+        <div className="containerVideo">
+          <video className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
+        </div>
+        </div>
         <div className="row"> 
-          <div className="name-home">
-            Welcome To My Website!
-          </div>
+          <ScrollAnimation animateIn="fadeInUp" className="name-home">
+            <div className="name-home">
+                Welcome To My Website!
+              </div>
+          </ScrollAnimation> 
         </div>
         <div className="row">
+          
           <div className="col-md-8">
+          <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
             <div className="card">
               <div className="card-body">
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -139,8 +148,12 @@ class home extends React.Component {
                 <a href="https://www.instagram.com/tonewalljackson/" target="_blank" rel="noopener noreferrer" className="btn btn-primary instaButton">Instagram</a>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
+          
+          
           <div className="col-md-4" id="sideBar">
+          <ScrollAnimation animateIn="flipInY" animateOut="flipOutY">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">About This Website</h5>
@@ -149,7 +162,9 @@ class home extends React.Component {
                 <a href="https://github.com/Tonewall/Personal-Website-2.0" className="btn btn-dark">GitHub Repo</a>
               </div>
             </div>
+            </ScrollAnimation>
           </div>
+          
         </div>
         <hr></hr>
         <div className="row" id="skills">

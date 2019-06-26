@@ -12,7 +12,7 @@
     margin-bottom: 30px;
     margin-top: 0px;
     font-family: Permanent Marker;
-    margin-top: 110px;
+    margin-top: 20px;
 }
 .instaButton {
     margin-top:10px;
@@ -83,4 +83,31 @@ ul {
 }
 .sk {
     margin-bottom: -20px;
+}
+.upper {
+    height: 100vh;
+    display:flex;
+    align-items:center;
+    max-width: 960px;
+    padding-left: 20%;
+    padding-right: 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+
+.containerVideo{
+    position: absolute;
+    top: 0;
+    margin-top: -20vh;
+    left: 0;
+    bottom: 50px;
+    width: 100vw;
+    height: 120vh;
+    overflow: hidden;
+}
+
+.containerVideo video {
+    min-width: 100%;
+    min-height: 100%;
 }
