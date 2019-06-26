@@ -12,7 +12,7 @@ export default class NavBar extends Component {
 
   render() {
     return (
-  <nav className="navbar shadow p-3 mb-5 fixed-top navbar-expand-md navbar-light bg-light">
+  <nav className="navbar shadow p-1 mb-5 fixed-top navbar-expand-md navbar-light bg-light">
         <a className="navbar-brand" href="/">Home</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -20,6 +20,9 @@ export default class NavBar extends Component {
   
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
+      <li className="nav-item">
+          <a className="nav-link" href="/test">Test</a>
+        </li>
         <li className="nav-item">
           <a className="nav-link" href="/projects">Projects</a>
         </li>
@@ -66,12 +69,12 @@ export default class NavBar extends Component {
           </div>
         </li>
       </ul>
-      <div className="navName d-none d-lg-block">
+      <div className="navName d-none d-xl-block">
         Geunyoung (Tony) Choi
       </div>
-      <div className="inline my-2 my-lg-0">
-        <Link to="/contact">
-        <button className="btn btn-outline-primary my-2 my-sm-0" href="/contact">Contact</button>
+      <div>
+        <Link to="/contact" className="say-hi-button">
+        <button className="btn btn-outline-primary my-2 my-sm-0 say-hi" href="/contact">SAY HI!</button>
         </Link>
       
     </div>

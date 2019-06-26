@@ -1,10 +1,89 @@
 import React from "react";
 import "./Home.css";
 import $ from "jquery";
+import "animate.css/animate.min.css";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class home extends React.Component {
   
-
+  getLanguages() {
+    let languages = [
+      {
+        name: "Java",
+        url: "java.png"
+      },
+      {
+        name: "Python",
+        url: "python.png"
+      },
+      {
+        name: "JavaScript",
+        url: "javaScript.png"
+      },
+      {
+        name: "C",
+        url: "c.png"
+      },
+      {
+        name: "HTML5",
+        url: "html5.png"
+      },
+      {
+        name: "CSS3",
+        url: "css.png"
+      }
+    ]
+    const languagesList = languages.map((language) =>
+      <div>
+        <li><img className="skillIcons" alt={language.name} src={require("../images/"+language.url)}></img>{language.name}</li>
+        <hr></hr>    
+      </div>    
+    );
+    return (
+      <ul className="sk">{languagesList}</ul>
+    )
+  }
+  getTools() {
+    let tools = [
+      {
+        name: "ReactJS",
+        url: "reactJS.png"
+      },
+      {
+        name: "Vue.js",
+        url: "vueJS.png"
+      },
+      {
+        name: "Node.js",
+        url: "nodeJS.png"
+      },
+      {
+        name: "Bootstrap",
+        url: "bootstrap.png"
+      },
+      {
+        name: "JQuery",
+        url: "jQuery.png"
+      },
+      {
+        name: "Vuetify",
+        url: "vuetify.png"
+      },
+      {
+        name: "Django",
+        url: "django.png"
+      }
+    ]
+    const toolsList = tools.map((tool) =>
+      <div>
+        <li><img className="skillIcons" alt={tool.name} src={require("../images/"+tool.url)}></img>{tool.name}</li>
+        <hr></hr>
+      </div>
+    );
+    return (
+      <ul className="sk">{toolsList}</ul>
+    )
+  }
   componentDidMount() {
     $('.carousel').carousel({
       interval: 13000
@@ -62,20 +141,65 @@ class home extends React.Component {
             </div>
           </div>
           <div className="col-md-4" id="sideBar">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title">About This Website</h5>
+            <div className="card">
+              <div className="card-body">
+                <h5 className="card-title">About This Website</h5>
                 <hr></hr>
-                <p class="card-text">This webiste has been written entirely using JavaScript, HTML5, and CSS3 along with Bootstrap and JQuery Libraries and ReactJS framework. This is a fully renovated version of my first website which was all hardcoded without using any libraries or frameworks. While it was a great project to foster my knowledge with CSS3, it was very rudimentary</p>
-                <a href="https://github.com/Tonewall/Personal-Website-2.0" class="btn btn-dark">GitHub Repo</a>
+                <p className="card-text">This webiste has been written entirely using JavaScript, HTML5, and CSS3 along with Bootstrap and JQuery Libraries and ReactJS framework. This is a fully renovated version of my first website which was all hardcoded without using any libraries or frameworks. While it was a great project to foster my knowledge with CSS3, it was very rudimentary</p>
+                <a href="https://github.com/Tonewall/Personal-Website-2.0" className="btn btn-dark">GitHub Repo</a>
               </div>
             </div>
           </div>
         </div>
+        <hr></hr>
         <div className="row" id="skills">
-          <div className="skillsTitle">
-            Skills
+          <ScrollAnimation className="anim" animateIn="slideInUp">
+            <div className="skillsTitle">
+              Skills
+            </div>
+          </ScrollAnimation>
+        </div>
+        <div className="row skillList">
+        
+          <div className="col-md-4 skill-picture">
+          <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+            <div className="card profile-card">
+              <div className="card-body profile-card">
+                <img alt="Profile" className="profileSkills" src={require("../images/Profile.jpg")}></img>
+              </div>
+            </div>
+            </ScrollAnimation>
           </div>
+          
+          <div className="col-md-4 skill-list">
+          <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown">
+              <div className="card list-card">
+                <div className="card-header">
+                  <img className="codeSkill" alt="Code" src={require("../images/code.png")}></img>Languages
+                </div>
+                <div className="card-body">
+                  {this.getLanguages()}
+                </div>
+              </div>
+            </ScrollAnimation>
+            </div>
+            <div className="col-md-4 skill-list">
+            <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft">
+              <div className="card list-card">
+                <div className="card-header">
+                <img className="toolSkill" alt="Tools" src={require("../images/tools.png")}></img>Frameworks/Tools
+                </div>
+                <div className="card-body">
+                  {this.getTools()}
+                </div>
+                
+            </div>
+            </ScrollAnimation>
+          </div>
+
+          
+
+          
 
         </div>
       </div>

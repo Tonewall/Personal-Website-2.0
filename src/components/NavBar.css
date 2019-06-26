@@ -73,3 +73,10 @@ nav.navbar, .navbar-default {
     margin:auto;
     margin-left: 0px;
 }
+
+.say-hi {
+    font-family: "Mali";
+}
+.say-hi-button {
+    margin-right: 50px;
+}
