@@ -94,9 +94,12 @@ class home extends React.Component {
     return (
       <div className="container bgStyle">
         <div className="upper">
-        <div className="containerVideo">
-          <video className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
-        </div>
+          <div className="containerVideo">
+            <video className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
+          </div>
+          <div className="header-content">
+            <h1>A Helluva Engineer*</h1>
+          </div>
         </div>
         <div className="row"> 
           <ScrollAnimation animateIn="fadeInUp" className="name-home">
@@ -105,10 +108,10 @@ class home extends React.Component {
               </div>
           </ScrollAnimation> 
         </div>
-        <div className="row">
+        <div className="row mid">
           
-          <div className="col-md-8">
-          <ScrollAnimation animateIn="flipInX" animateOut="flipOutX">
+          <div className="col-md-6">
+          <ScrollAnimation animateIn="flipInX">
             <div className="card">
               <div className="card-body">
                 <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
@@ -121,6 +124,9 @@ class home extends React.Component {
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
+                      <img className="d-block w-100" alt="carousel 4" src={require("../images/carousel-4.jpg")}></img>
+                    </div>
+                    <div className="carousel-item">
                       <video className="d-block w-100" src={require("../images/carousel-0.mp4")} autoPlay={true} loop={true} muted></video>
                     </div>
                     <div className="carousel-item">
@@ -131,9 +137,6 @@ class home extends React.Component {
                     </div>
                     <div className="carousel-item">
                       <img className="d-block w-100" alt="carousel 3" src={require("../images/carousel-3.jpg")}></img>
-                    </div>
-                    <div className="carousel-item">
-                      <img className="d-block w-100" alt="carousel 4" src={require("../images/carousel-4.jpg")}></img>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -152,8 +155,8 @@ class home extends React.Component {
           </div>
           
           
-          <div className="col-md-4" id="sideBar">
-          <ScrollAnimation animateIn="flipInY" animateOut="flipOutY">
+          <div className="col-md-6" id="sideBar">
+          <ScrollAnimation animateIn="flipInY">
             <div className="card">
               <div className="card-body">
                 <h5 className="card-title">About This Website</h5>
@@ -167,13 +170,7 @@ class home extends React.Component {
           
         </div>
         <hr></hr>
-        <div className="row" id="skills">
-          <ScrollAnimation className="anim" animateIn="slideInUp">
-            <div className="skillsTitle">
-              Skills
-            </div>
-          </ScrollAnimation>
-        </div>
+        
         <div className="row skillList">
         
           <div className="col-md-4 skill-picture">
@@ -211,12 +208,79 @@ class home extends React.Component {
             </div>
             </ScrollAnimation>
           </div>
-
-          
-
-          
-
         </div>
+        <hr></hr>
+        <div className="row stJudeMain">
+          <div className="row">
+            <div className="stJudeT">
+            <a href="https://www.stjude.org/" target="_blank" rel="noopener noreferrer">
+              <img className="stJudeLogo" alt="St Jude" src={require("../images/stJude.png")}></img>
+            </a>
+            </div>
+          </div>
+          <div className="row donateInfo">
+            Donate today to the St.Jude Children's Research Hospital to help find cures for cancer and treat children worldwide. Majority of St.Jude's funding comes from donations from individuals. From the funding, families never receive a single bill from St. Jude for treatment, travel, housing or food.
+            <br></br>
+            "No child should die in the dawn of life"
+            <br></br>
+            -Danny Thomas, Founder
+            <div className="donateButton">
+            <a className="btn dbtn" href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_icid=header-btn-donate-now"><div className="buttonInfo">Donate Today</div></a>
+          </div>
+          </div>
+          
+          
+        </div>
+        <div className="stJudePics">
+            <div className="wrapper">
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/1.jpg")} alt="1"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/2.jpg")} alt="2"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/3.jpg")} alt="3"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/4.jpg")} alt="4"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/5.jpg")} alt="5"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/6.jpg")} alt="6"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/7.jpg")} alt="7"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/8.jpg")} alt="8"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/9.jpg")} alt="9"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/10.jpg")} alt="10"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/11.jpg")} alt="11"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/12.jpg")} alt="12"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/13.jpg")} alt="13"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/14.jpg")} alt="14"></img>
+              </div>
+              <div className="imgContainer">
+              <img className="stJudeImg" src={require("../images/15.jpg")} alt="15"></img>
+              </div>
+            </div>
+
+          </div>
       </div>
     );
   }
