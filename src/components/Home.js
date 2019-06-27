@@ -101,16 +101,16 @@ class home extends React.Component {
             <h1>A Helluva Engineer*</h1>
           </div>
         </div>
-        <div className="row"> 
+        {/* <div className="row"> 
           <ScrollAnimation animateIn="fadeInUp" className="name-home">
             <div className="name-home">
                 Welcome To My Website!
               </div>
           </ScrollAnimation> 
-        </div>
+        </div> */}
         <div className="row mid">
           
-          <div className="col-md-6">
+          <div className="col-lg-6">
           <ScrollAnimation animateIn="flipInX">
             <div className="card">
               <div className="card-body">
@@ -155,7 +155,12 @@ class home extends React.Component {
           </div>
           
           
-          <div className="col-md-6" id="sideBar">
+          <div className="col-lg-6" id="sideBar">
+          <ScrollAnimation animateIn="fadeInUp" className="name-home">
+            <div className="name-home">
+                Welcome To My Website!
+              </div>
+          </ScrollAnimation>
           <ScrollAnimation animateIn="flipInY">
             <div className="card">
               <div className="card-body">
@@ -212,21 +217,21 @@ class home extends React.Component {
         <hr></hr>
         <div className="row stJudeMain">
           <div className="row">
-            <div className="stJudeT">
-            <a href="https://www.stjude.org/" target="_blank" rel="noopener noreferrer">
-              <img className="stJudeLogo" alt="St Jude" src={require("../images/stJude.png")}></img>
-            </a>
+            <div className="col-md-4 stJudeT">
+              <a href="https://www.stjude.org/" target="_blank" rel="noopener noreferrer">
+                <img className="stJudeLogo" alt="St Jude" src={require("../images/stJude.png")}></img>
+              </a>
             </div>
-          </div>
-          <div className="row donateInfo">
-            Donate today to the St.Jude Children's Research Hospital to help find cures for cancer and treat children worldwide. Majority of St.Jude's funding comes from donations from individuals. From the funding, families never receive a single bill from St. Jude for treatment, travel, housing or food.
-            <br></br>
-            "No child should die in the dawn of life"
-            <br></br>
-            -Danny Thomas, Founder
-            <div className="donateButton">
-            <a className="btn dbtn" href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_icid=header-btn-donate-now"><div className="buttonInfo">Donate Today</div></a>
-          </div>
+            <div className="col-md-8 donateInfo">
+              Donate today to the St.Jude Children's Research Hospital to help find cures for cancer and treat children worldwide. Majority of St.Jude's funding comes from donations from individuals. From the funding, families never receive a single bill from St. Jude for treatment, travel, housing or food.
+              <br></br>
+              "No child should die in the dawn of life"
+              <br></br>
+              -Danny Thomas, Founder
+              <div className="donateButton">
+                <a className="btn dbtn" href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_icid=header-btn-donate-now"><div className="buttonInfo">Donate Today</div></a>
+              </div>
+            </div>
           </div>
           
           
