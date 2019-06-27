@@ -18,7 +18,29 @@ import 'bootstrap';
 
 
 class App extends Component {
+  state = {
+    loading: true
+  };
+  componentDidMount() {
+    demoAsyncCall().then(()=>this.setState({ loading:false }));
+  }
   render() {
+    const {loading} = this.state;
+    if(loading) {
+      return (
+        <div className="spinners">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+      );
+    }
     return (
       <div className="app">
         <Router>
@@ -40,6 +62,9 @@ class App extends Component {
       </div>
     );
   }
+}
+function demoAsyncCall() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
 
 export default App;
