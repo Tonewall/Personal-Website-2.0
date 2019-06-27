@@ -6,6 +6,12 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Test from "./components/test";
+import AboutMe from "./components/AboutMe";
+import Helicopter from "./components/Helicopter";
+import Website1 from "./components/Website1";
+import Website2 from "./components/Website2";
+import AndroidApp from "./components/AndroidApp";
+import FlyRight from "./components/FlyRight";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import 'bootstrap';
@@ -19,9 +25,15 @@ class App extends Component {
           <div>
             <NavBar />
             <Route exact path="/" component={Home} />
-            <Route path="/projects" component={Projects} />
             <Route path="/contact" component={Contact} />
             <Route path="/test" component={Test} />
+            <Route path="/aboutme" component={AboutMe} />
+            <Route path="/vms" component={Projects} />
+            <Route path="/helicopter" component={Helicopter} />
+            <Route path="/website1" component={Website1} />
+            <Route path="/website2" component={Website2} />
+            <Route path="/flyright" component={FlyRight} />
+            <Route path="/androidapp" component={AndroidApp} />
           </div>
         </Router>
         <Footer />

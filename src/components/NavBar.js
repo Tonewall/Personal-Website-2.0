@@ -21,10 +21,10 @@ export default class NavBar extends Component {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
       <li className="nav-item">
-          <a className="nav-link" href="/test">Test</a>
+          <a className="nav-link" href="/aboutme">About Me</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/projects">Projects</a>
+          <a className="nav-link" href="/vms">Projects</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
