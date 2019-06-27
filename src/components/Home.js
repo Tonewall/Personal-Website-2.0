@@ -229,7 +229,7 @@ class home extends React.Component {
               <br></br>
               -Danny Thomas, Founder
               <div className="donateButton">
-                <a className="btn dbtn" href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_icid=header-btn-donate-now"><div className="buttonInfo">Donate Today</div></a>
+                <a className="btn dbtn" href="https://www.stjude.org/donate/donate-to-st-jude.html?sc_icid=header-btn-donate-now" target="_blank" rel="noopener noreferrer"><div className="buttonInfo">Donate Today</div></a>
               </div>
             </div>
           </div>

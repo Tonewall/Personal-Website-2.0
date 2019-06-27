@@ -20,9 +20,9 @@ export default class NavBar extends Component {
   
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
-      <li className="nav-item">
+        {/* <li className="nav-item">
           <a className="nav-link" href="/aboutme">About Me</a>
-        </li>
+        </li> */}
         <li className="nav-item">
           <a className="nav-link" href="/vms">Projects</a>
         </li>
@@ -35,10 +35,8 @@ export default class NavBar extends Component {
           </a>
           <div className="dropdown-menu" aria-labelledby="navbarDropdown"
           id="btn-id">
-            <a className="dropdown-item" href="#">Action</a>
-            <a className="dropdown-item" href="#">Another action</a>
-            <div className="dropdown-divider"></div>
-            <a className="dropdown-item" href="#">Something else here</a>
+            <a className="dropdown-item" href="#">Coming Soon</a>
+            <a className="dropdown-item" href="#">Coming Soon</a>
           </div>
         </li>
         <li className="nav-item dropdown">
