@@ -29,7 +29,7 @@ export default class NavBar extends Component {
         <li className="nav-item">
           <a className="nav-link" href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
         </li>
-        <li className="nav-item dropdown">
+        {/* <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Random
           </a>
@@ -38,7 +38,7 @@ export default class NavBar extends Component {
             <a className="dropdown-item" href="#">Coming Soon</a>
             <a className="dropdown-item" href="#">Coming Soon</a>
           </div>
-        </li>
+        </li> */}
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Social Media
