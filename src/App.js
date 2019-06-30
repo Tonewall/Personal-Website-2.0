@@ -27,26 +27,12 @@ class App extends Component {
   }
   render() {
     const {loading} = this.state;
-    // if(loading) {
-    //   return (
-    //     <div className="spinnerBack">
-    //       <div className="loadingInfo">
-    //           Loading Greatness
-    //       </div>
-    //       <div className="spinners">
-    //         <div class="spinner-grow text-primary" role="status">
-    //           <span class="sr-only">Loading...</span>
-    //         </div>
-    //         <div class="spinner-grow text-primary" role="status">
-    //           <span class="sr-only">Loading...</span>
-    //         </div>
-    //         <div class="spinner-grow text-primary" role="status">
-    //           <span class="sr-only">Loading...</span>
-    //         </div>
-    //       </div>
-    //     </div>
-    //   );
-    // }
+    if(loading) {
+      return (
+        <div className="spinnerBack">
+        </div>
+      );
+    }
     return (
       <div className="app">
         <Router>
@@ -70,7 +56,7 @@ class App extends Component {
   }
 }
 function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 500));
 }
 
 export default App;

@@ -105,7 +105,7 @@ class home extends React.Component {
       return (
         <div className="spinnerBack">
           <div className="loadingInfo">
-            Almost Done
+            Loading Greatness
           </div>
         <div className="spinners">
           
@@ -323,7 +323,7 @@ class home extends React.Component {
   }
 }
 function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 5000));
 }
 
 export default home;

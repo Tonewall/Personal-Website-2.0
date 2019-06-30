@@ -2,7 +2,40 @@ import React from "react";
 import "./Contact.css";
 
 class contact extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      loading: true
+    }
+  }
+  componentDidMount() {
+    demoAsyncCall().then(()=>this.setState({ loading:false }));
+  }
   render() {
+    const {loading} = this.state;
+
+    if(loading) {
+      return (
+        <div className="spinnerBack">
+          <div className="loadingInfo">
+            Just Another Spinner
+          </div>
+        <div className="spinners">
+          
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        </div>
+      );
+
+    }
     return (
       <div className="container bgStyle contactMain">
         <div className="card memeCard">
@@ -21,6 +54,9 @@ class contact extends React.Component {
       </div>
     );
   }
+}
+function demoAsyncCall() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
 
 export default contact;
