@@ -85,6 +85,8 @@ class home extends React.Component {
     )
   }
   componentDidMount() {
+    const video = new Image();
+    video.src = "../images/codingBackground.mov";
     $('.carousel').carousel({
       interval: 13000
     })
@@ -95,7 +97,7 @@ class home extends React.Component {
       <div className="container bgStyle">
         <div className="upper">
           <div className="containerVideo">
-            <video id="homeVideo" className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
+            <video id="homeVideo" preload="auto" className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
           </div>
           <div className="header-content">
             <h1>A Helluva Engineer*</h1>
