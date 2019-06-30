@@ -99,6 +99,7 @@ ul {
     height: 120vh;
     overflow: hidden;
     background-image: url("../images/preLoader.png");
+    background-size: cover;
 }
 
 .containerVideo video {
