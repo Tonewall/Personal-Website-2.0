@@ -176,3 +176,8 @@ ul {
     -webkit-filter: grayscale(0%);
 	filter: grayscale(0%);
 }
+.loadingInfo {
+    color: #555e91;
+    text-align: center;
+    padding-top: 17%;
+}

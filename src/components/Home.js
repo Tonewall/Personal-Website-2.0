@@ -5,6 +5,13 @@ import "animate.css/animate.min.css";
 import ScrollAnimation from 'react-animate-on-scroll';
 
 class home extends React.Component {
+
+  constructor() {
+    super();
+    this.state = {
+      loading: true
+    }
+  }
   
   getLanguages() {
     let languages = [
@@ -85,14 +92,37 @@ class home extends React.Component {
     )
   }
   componentDidMount() {
-    const video = new Image();
-    video.src = "../images/codingBackground.mov";
+    demoAsyncCall().then(()=>this.setState({ loading:false }));
     $('.carousel').carousel({
       interval: 13000
     })
   }
 
   render() {
+    const {loading} = this.state;
+
+    if(loading) {
+      return (
+        <div className="spinnerBack">
+          <div className="loadingInfo">
+            Almost Done
+          </div>
+        <div className="spinners">
+          
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+          <div class="spinner-grow text-primary" role="status">
+            <span class="sr-only">Loading...</span>
+          </div>
+        </div>
+        </div>
+      );
+
+    }
     return (
       <div className="container bgStyle">
         <div className="upper">
@@ -291,6 +321,9 @@ class home extends React.Component {
       </div>
     );
   }
+}
+function demoAsyncCall() {
+  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
 }
 
 export default home;

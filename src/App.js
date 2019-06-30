@@ -27,21 +27,26 @@ class App extends Component {
   }
   render() {
     const {loading} = this.state;
-    if(loading) {
-      return (
-        <div className="spinners">
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
-          </div>
-        </div>
-      );
-    }
+    // if(loading) {
+    //   return (
+    //     <div className="spinnerBack">
+    //       <div className="loadingInfo">
+    //           Loading Greatness
+    //       </div>
+    //       <div className="spinners">
+    //         <div class="spinner-grow text-primary" role="status">
+    //           <span class="sr-only">Loading...</span>
+    //         </div>
+    //         <div class="spinner-grow text-primary" role="status">
+    //           <span class="sr-only">Loading...</span>
+    //         </div>
+    //         <div class="spinner-grow text-primary" role="status">
+    //           <span class="sr-only">Loading...</span>
+    //         </div>
+    //       </div>
+    //     </div>
+    //   );
+    // }
     return (
       <div className="app">
         <Router>
