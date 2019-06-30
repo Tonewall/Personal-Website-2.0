@@ -33,14 +33,14 @@ class projects extends React.Component {
           </div>
         <div className="spinners">
           
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
         </div>
         </div>
@@ -49,32 +49,32 @@ class projects extends React.Component {
     }
     return (
       <div className="container bgStyle">
-        <div class="card project-card">
-          <div class="card-header card-header-project">
-            <ul class="nav nav-tabs card-header-tabs">
-              <li class="nav-item">
-                <a class="nav-link active" href="/vms">VMS</a>
+        <div className="card project-card">
+          <div className="card-header card-header-project">
+            <ul className="nav nav-tabs card-header-tabs">
+              <li className="nav-item">
+                <a className="nav-link active" href="/vms">VMS</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/flyright">FlyRight</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/flyright">FlyRight</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/androidapp">Android App</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/androidapp">Android App</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/helicopter">Helicopter</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/helicopter">Helicopter</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/website2">Website 2.0</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/website2">Website 2.0</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/website1">Website 1.0</a>
+              <li className="nav-item">
+                <a className="nav-link" href="/website1">Website 1.0</a>
               </li>
             </ul>
           </div>
-          <div class="card-body">
-            <div class="row">
-            <div class="col-md-6">
+          <div className="card-body">
+            <div className="row">
+            <div className="col-md-6">
               <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
                   <ol className="carousel-indicators">
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -106,12 +106,12 @@ class projects extends React.Component {
                   </a>
                 </div>
             </div>
-            <div class="col-md-6">
+            <div className="col-md-6">
               <h1>VMS Bot</h1>
-              <p class="card-text">This was the first project I had worked on at the Police Department. Video Management System was created for the Georgia Tech Police Department check all 2000+ campus security cameras regularly for quality assurance. The Department had originally planned on purchasing a popular third party software that did the same job and more for yearly. However, the creation of this website had managed to save the Department ~$100,000/yr.</p>
+              <p className="card-text">This was the first project I had worked on at the Police Department. Video Management System was created for the Georgia Tech Police Department check all 2000+ campus security cameras regularly for quality assurance. The Department had originally planned on purchasing a popular third party software that did the same job and more for yearly. However, the creation of this website had managed to save the Department ~$100,000/yr.</p>
               <h5>Technology Summary:</h5>
               <div>{this.getTechnology()}</div>
-              <a href="https://github.com/Tonewall/VMSBot" target="_blank" rel="noopener noreferrer" class="btn btn-primary">GitHub</a>
+              <a href="https://github.com/Tonewall/VMSBot" target="_blank" rel="noopener noreferrer" className="btn btn-primary">GitHub</a>
             </div>
             </div>
             

@@ -46,6 +46,7 @@
   background-size: 100%;
 }
 .spinnerBack{
+  z-index: 2;
   width:100vw;
   height:100vh;
   background: url("images/black-background.jpg");

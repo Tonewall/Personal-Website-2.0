@@ -98,7 +98,12 @@ class home extends React.Component {
       interval: 13000
     })
     var elem = document.getElementById("load");
-    elem.parentNode.removeChild(elem);
+    
+    setTimeout(function(){ 
+      elem.parentNode.removeChild(elem);
+      document.getElementById("videoBack").style.marginTop="-20vh";
+    }, 4000);
+    
   }
 
   render() {
@@ -106,39 +111,35 @@ class home extends React.Component {
     return (
       <div className="home">
         <div className="spinnerBack" id="load">
+          <div className="containerVideo">
+            <img src="../images/black-background.png"></img>
+          </div>
           <div className="loadingInfo">
             Loading Greatness
           </div>
         <div className="spinners">
           
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
         </div>
         </div>
     
       <div className="container bgStyle">
         <div className="upper">
-          <div className="containerVideo">
+          <div className="containerVideo" id="videoBack">
             <video id="homeVideo" preload="auto" className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
           </div>
           <div className="header-content">
             <h1>A Helluva Engineer*</h1>
           </div>
         </div>
-        {/* <div className="row"> 
-          <ScrollAnimation animateIn="fadeInUp" className="name-home">
-            <div className="name-home">
-                Welcome To My Website!
-              </div>
-          </ScrollAnimation> 
-        </div> */}
         <div className="row mid">
           
           <div className="col-lg-6">

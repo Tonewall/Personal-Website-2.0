@@ -22,14 +22,14 @@ class contact extends React.Component {
           </div>
         <div className="spinners">
           
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
-          <div class="spinner-grow text-primary" role="status">
-            <span class="sr-only">Loading...</span>
+          <div className="spinner-grow text-primary" role="status">
+            <span className="sr-only">Loading...</span>
           </div>
         </div>
         </div>
