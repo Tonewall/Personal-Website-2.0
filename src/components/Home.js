@@ -95,7 +95,7 @@ class home extends React.Component {
       <div className="container bgStyle">
         <div className="upper">
           <div className="containerVideo">
-            <video className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
+            <video id="homeVideo" className="video" src={require("../images/codingBackground.mov")} autoPlay={true} loop={true} muted></video>
           </div>
           <div className="header-content">
             <h1>A Helluva Engineer*</h1>

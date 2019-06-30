@@ -18,6 +18,7 @@ import 'bootstrap';
 
 
 class App extends Component {
+  
   state = {
     loading: true
   };
@@ -64,7 +65,7 @@ class App extends Component {
   }
 }
 function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 2500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 5000));
 }
 
 export default App;
