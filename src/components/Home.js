@@ -92,18 +92,20 @@ class home extends React.Component {
     )
   }
   componentDidMount() {
+    console.log("log");
     demoAsyncCall().then(()=>this.setState({ loading:false }));
     $('.carousel').carousel({
       interval: 13000
     })
+    var elem = document.getElementById("load");
+    elem.parentNode.removeChild(elem);
   }
 
   render() {
     const {loading} = this.state;
-
-    if(loading) {
-      return (
-        <div className="spinnerBack">
+    return (
+      <div className="home">
+        <div className="spinnerBack" id="load">
           <div className="loadingInfo">
             Loading Greatness
           </div>
@@ -120,10 +122,7 @@ class home extends React.Component {
           </div>
         </div>
         </div>
-      );
-
-    }
-    return (
+    
       <div className="container bgStyle">
         <div className="upper">
           <div className="containerVideo">
@@ -319,11 +318,12 @@ class home extends React.Component {
         </div>
         
       </div>
+      </div>
     );
   }
 }
 function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 10000));
+  return new Promise((resolve) => setTimeout(() => resolve(), 4000));
 }
 
 export default home;
