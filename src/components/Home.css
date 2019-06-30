@@ -151,7 +151,7 @@ ul {
 }
 
 .stJudePics {
-    margin-left:-4vw;;
+    margin: auto;
     width: 90vw;
 }
 .wrapper{font-size:0;}/*for inline block spacing*/

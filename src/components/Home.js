@@ -233,10 +233,7 @@ class home extends React.Component {
               </div>
             </div>
           </div>
-          
-          
-        </div>
-        <div className="stJudePics">
+          <div className="stJudePics">
             <div className="wrapper">
               <div className="imgContainer">
               <img className="stJudeImg" src={require("../images/1.jpg")} alt="1"></img>
@@ -286,6 +283,9 @@ class home extends React.Component {
             </div>
 
           </div>
+          
+        </div>
+        
       </div>
     );
   }
