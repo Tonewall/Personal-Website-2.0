@@ -324,7 +324,7 @@ class home extends React.Component {
   }
 }
 function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 4000));
+  return new Promise((resolve) => setTimeout(() => resolve(), 7000));
 }
 
 export default home;
