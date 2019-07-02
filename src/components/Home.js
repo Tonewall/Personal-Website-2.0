@@ -211,7 +211,7 @@ class home extends React.Component {
         <div className="row skillList">
         
           <div className="col-md-4 skill-picture">
-          <ScrollAnimation animateIn="bounceInRight" animateOut="bounceOutRight">
+          <ScrollAnimation animateIn="bounceInRight">
             <div className="card profile-card">
               <div className="card-body profile-card">
                 <img alt="Profile" className="profileSkills" src={require("../images/Profile.jpg")}></img>
@@ -221,7 +221,7 @@ class home extends React.Component {
           </div>
           
           <div className="col-md-4 skill-list">
-          <ScrollAnimation animateIn="bounceInUp" animateOut="bounceOutDown">
+          <ScrollAnimation animateIn="bounceInUp">
               <div className="card list-card">
                 <div className="card-header">
                   <img className="codeSkill" alt="Code" src={require("../images/code.png")}></img>Languages
@@ -233,7 +233,7 @@ class home extends React.Component {
             </ScrollAnimation>
             </div>
             <div className="col-md-4 skill-list">
-            <ScrollAnimation animateIn="bounceInLeft" animateOut="bounceOutLeft">
+            <ScrollAnimation animateIn="bounceInLeft">
               <div className="card list-card">
                 <div className="card-header">
                 <img className="toolSkill" alt="Tools" src={require("../images/tools.png")}></img>Frameworks/Tools
