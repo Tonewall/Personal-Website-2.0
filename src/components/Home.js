@@ -107,7 +107,6 @@ class home extends React.Component {
   }
 
   render() {
-    const {loading} = this.state;
     return (
       <div className="home">
         <div className="spinnerBack" id="load">
@@ -324,7 +323,7 @@ class home extends React.Component {
   }
 }
 function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 11500));
+  return new Promise((resolve) => setTimeout(() => resolve(), 12000));
 }
 
 export default home;
