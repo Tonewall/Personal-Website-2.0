@@ -49,7 +49,7 @@ class contact extends React.Component {
               <br></br>
             </p>
             <img src={require("../images/meme.png")} alt="Overused Meme" className="meme"></img>
-            Just send me an email at tchoi52@gmail.com in the meantime!
+            Just send me an email at tchoi52@gmail.com in the meantime! :)
           </div>
         </div>
       </div>
