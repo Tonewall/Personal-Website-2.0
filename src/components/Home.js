@@ -92,8 +92,6 @@ class home extends React.Component {
     )
   }
   componentDidMount() {
-    console.log("log");
-    demoAsyncCall().then(()=>this.setState({ loading:false }));
     $('.carousel').carousel({
       interval: 13000
     })
@@ -102,7 +100,7 @@ class home extends React.Component {
     setTimeout(function(){ 
       elem.parentNode.removeChild(elem);
       document.getElementById("videoBack").style.marginTop="-20vh";
-    }, 4000);
+    }, 8000);
     
   }
 
@@ -321,9 +319,6 @@ class home extends React.Component {
       </div>
     );
   }
-}
-function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 12000));
 }
 
 export default home;
