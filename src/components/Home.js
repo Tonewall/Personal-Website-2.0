@@ -100,7 +100,7 @@ class home extends React.Component {
     setTimeout(function(){ 
       elem.parentNode.removeChild(elem);
       document.getElementById("videoBack").style.marginTop="-20vh";
-    }, 8000);
+    }, 4000);
     
   }
 
@@ -112,7 +112,10 @@ class home extends React.Component {
             <img src="../images/black-background.png"></img>
           </div>
           <div className="loadingInfo">
-            Loading Greatness
+            <div className="quote">
+              "It's amazing. Life changes very quickly, in a very positive way, if you let it."
+              <div className="quoteName">-Lindsey Vonn</div>
+            </div>
           </div>
         <div className="spinners">
           

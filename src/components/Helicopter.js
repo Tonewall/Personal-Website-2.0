@@ -20,16 +20,16 @@ class helicopter extends React.Component {
         )
       }
       componentDidMount() {
-        demoAsyncCall().then(()=>this.setState({ loading:false }));
-      }
+        var elem = document.getElementById("load");
+        setTimeout(function(){ 
+          elem.parentNode.removeChild(elem);
+        }, 1000);      }
   render() {
-    const {loading} = this.state;
-
-    if(loading) {
-      return (
-        <div className="spinnerBack">
-          <div className="loadingInfo">
-            Almost Done
+    return (
+      <div>
+        <div className="spinnerBack" id="load">
+          <div className="containerVideo">
+            <img src="../images/black-background.png"></img>
           </div>
         <div className="spinners">
           
@@ -44,11 +44,7 @@ class helicopter extends React.Component {
           </div>
         </div>
         </div>
-      );
-
-    }
-    return (
-      <div className="container bgStyle">
+        <div className="container bgStyle">
         <div className="card project-card">
           <div className="card-header card-header-project">
             <ul className="nav nav-tabs card-header-tabs">
@@ -106,15 +102,13 @@ class helicopter extends React.Component {
               <a href="https://github.com/Tonewall/Helicopter" target="_blank" rel="noopener noreferrer" className="btn btn-primary">GitHub</a>
             </div>
             </div>
+            </div>
             
           </div>
         </div>
       </div>
     );
   }
-}
-function demoAsyncCall() {
-  return new Promise((resolve) => setTimeout(() => resolve(), 500));
 }
 
 export default helicopter;

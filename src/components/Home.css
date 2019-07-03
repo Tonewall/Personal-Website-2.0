@@ -180,6 +180,8 @@ ul {
     z-index: 3;
     color: #555e91;
     text-align: center;
+    width: 300px;
+    margin:auto;
     font-family: "Mali";
     font-weight: bold;
     font-size: 25px;
@@ -187,4 +189,11 @@ ul {
 }
 #load {
     margin-bottom: 100px;
+}
+.quote {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.quoteName {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
