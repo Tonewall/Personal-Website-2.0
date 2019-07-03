@@ -82,10 +82,10 @@ class helicopter extends React.Component {
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <img className="d-block w-100" alt="carousel 1" src={require("../images/projects/helicopter0.PNG")}></img>
+                      <img className="d-block w-100" alt="carousel 1" src={require("../images/projects/helicopter0.png")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" alt="carousel 2" src={require("../images/projects/helicopter1.PNG")}></img>
+                      <img className="d-block w-100" alt="carousel 2" src={require("../images/projects/helicopter1.png")}></img>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

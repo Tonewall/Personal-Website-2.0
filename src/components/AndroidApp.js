@@ -83,13 +83,13 @@ class androidapp extends React.Component {
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <img className="d-block appH" alt="carousel 1" src={require("../images/projects/app0.PNG")}></img>
+                      <img className="d-block appH" alt="carousel 1" src={require("../images/projects/app0.png")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block appH" alt="carousel 2" src={require("../images/projects/app1.PNG")}></img>
+                      <img className="d-block appH" alt="carousel 2" src={require("../images/projects/app1.png")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block appH" alt="carousel 3" src={require("../images/projects/app2.PNG")}></img>
+                      <img className="d-block appH" alt="carousel 3" src={require("../images/projects/app2.png")}></img>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
