@@ -29,7 +29,7 @@ class androidapp extends React.Component {
       <div>
         <div className="spinnerBack" id="load">
           <div className="containerVideo">
-            <img src="../images/black-background.png"></img>
+            <img src="../images/black-background.png" alt="Loading"></img>
           </div>
         <div className="spinners">
           

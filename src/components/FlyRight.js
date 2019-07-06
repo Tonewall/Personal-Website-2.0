@@ -30,7 +30,7 @@ class flyright extends React.Component {
       <div className="mainWithLoad">
         <div className="spinnerBack" id="load">
           <div className="containerVideo">
-            <img src="../images/black-background.png"></img>
+            <img src="../images/black-background.png" alt="Loading"></img>
           </div>
         <div className="spinners">
           
