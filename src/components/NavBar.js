@@ -72,7 +72,7 @@ export default class NavBar extends Component {
       </div>
       <div>
         <Link to="/contact" className="say-hi-button">
-        <button className="btn btn-outline-primary my-2 my-sm-0 say-hi" href="mailto:tchoi52@gmail.com?Subject=Hello">SAY HI!</button>
+        <button className="btn btn-outline-primary my-2 my-sm-0 say-hi">SAY HI!</button>
         </Link>
       
     </div>
