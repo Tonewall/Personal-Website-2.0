@@ -38,21 +38,21 @@ class contact extends React.Component {
     }
     return (
       <div className="container bgStyle contactMain">
-        <div className="card memeCard">
-          <div className="card-body">
-            <p className="contact-card-text">
-              <b>Me</b>: It’s okay, I’ll finish this page before anyone sees this
-              <br></br>
-              <b>Recruiter</b>: *Opens this page with an overused meme
-              <br></br>
-              <b>Me</b>:
-              <br></br>
-            </p>
-            <img src={require("../images/meme.png")} alt="Overused Meme" className="meme"></img>
-            Just send me an email at <a href="mailto:tchoi52@gmail.com?Subject=Hello">tchoi52@gmail.com</a> in the meantime! :)
+          <div className="card memeCard">
+            <div className="card-body">
+              <p className="contact-card-text">
+                <b>Me</b>: It’s okay, I’ll finish this page before anyone sees this
+                <br></br>
+                <b>Recruiter</b>: *Opens this page with an overused meme
+                <br></br>
+                <b>Me</b>:
+                <br></br>
+              </p>
+              <img src={require("../images/meme.png")} alt="Overused Meme" className="meme"></img>
+              Just send me an email at <a href="mailto:tchoi52@gmail.com?Subject=Hello">tchoi52@gmail.com</a> in the meantime!
+            </div>
           </div>
         </div>
-      </div>
     );
   }
 }
