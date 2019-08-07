@@ -55,6 +55,9 @@ class androidapp extends React.Component {
                 <a className="nav-link" href="/flyright">FlyRight</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link" href="/counselingwebapp">Counseling Web App</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link active" href="/androidapp">Android App</a>
               </li>
               <li className="nav-item">
@@ -62,9 +65,6 @@ class androidapp extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/website2">Website 2.0</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/website1">Website 1.0</a>
               </li>
             </ul>
           </div>

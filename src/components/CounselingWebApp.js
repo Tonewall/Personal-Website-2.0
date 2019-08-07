@@ -1,7 +1,7 @@
 import React from "react";
 import "./Projects.css";
 
-class website1 extends React.Component {
+class counselingWebApp extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -9,7 +9,7 @@ class website1 extends React.Component {
     }
   }
   getTechnology() {
-    let techs = ["JavaScript", "HTML5", "CSS3", "Visual Studio Code"]
+    let techs = ["ReactJS", "JavaScript", "SQL", "HTML5", "CSS3", "Node.js", "Bootstrap", "Git Version Control", "Visual Studio Code"]
     const techList = techs.map((tech) =>
       <div>
         <li>{tech}</li>
@@ -55,6 +55,9 @@ class website1 extends React.Component {
                 <a className="nav-link" href="/flyright">FlyRight</a>
               </li>
               <li className="nav-item">
+                <a className="nav-link active" href="/counselingwebapp">Counseling Web App</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/androidapp">Android App</a>
               </li>
               <li className="nav-item">
@@ -62,9 +65,6 @@ class website1 extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/website2">Website 2.0</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link active" href="/website1">Website 1.0</a>
               </li>
             </ul>
           </div>
@@ -80,16 +80,16 @@ class website1 extends React.Component {
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
-                      <img className="d-block w-100" alt="carousel 1" src={require("../images/projects/website10.png")}></img>
+                      <img className="d-block w-100" alt="carousel 1" src={require("../images/projects/counseling0.png")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" alt="carousel 2" src={require("../images/projects/website11.png")}></img>
+                      <img className="d-block w-100" alt="carousel 2" src={require("../images/projects/counseling1.png")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" alt="carousel 3" src={require("../images/projects/website12.png")}></img>
+                      <img className="d-block w-100" alt="carousel 3" src={require("../images/projects/counseling2.png")}></img>
                     </div>
                     <div className="carousel-item">
-                      <img className="d-block w-100" alt="carousel 4" src={require("../images/projects/website13.png")}></img>
+                      <img className="d-block w-100" alt="carousel 4" src={require("../images/projects/counseling3.png")}></img>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -103,11 +103,11 @@ class website1 extends React.Component {
                 </div>
             </div>
             <div className="col-md-6">
-              <h1>Personal Website 1.0</h1>
-              <p className="card-text">This was my very first personal website written entirely in HTML5, CSS3, and some JavaScript. I didn't use any libraries like Bootstrap in order to foster my knowledge in CSS3. Since I now have a firm grasp of the style sheet language, I decided to recreate a polished version of the website and scrap this version deep in the abyss that is my GitHub Repository.</p>
+              <h1>Counseling Web App</h1>
+              <p className="card-text">Counseling Web App allows the Georgia Tech Police Department to look at the call data sent to dispatch and Georgia Tech's Counseling Center to better prepare for emergencies on campus.</p>
               <h5>Technology Summary:</h5>
               <div>{this.getTechnology()}</div>
-              <a href="https://github.com/Tonewall/Personal-Website" target="_blank" rel="noopener noreferrer" className="btn btn-primary">GitHub</a>
+              <a href="https://github.com/Tonewall/CounselingWebApp" target="_blank" rel="noopener noreferrer" className="btn btn-primary">GitHub</a>
             </div>
             </div>
             </div>
@@ -119,4 +119,4 @@ class website1 extends React.Component {
   }
 }
 
-export default website1;
+export default counselingWebApp;

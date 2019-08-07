@@ -8,7 +8,7 @@ import Contact from "./components/Contact";
 import Test from "./components/test";
 import AboutMe from "./components/AboutMe";
 import Helicopter from "./components/Helicopter";
-import Website1 from "./components/Website1";
+import CounselingWebApp from "./components/CounselingWebApp";
 import Website2 from "./components/Website2";
 import AndroidApp from "./components/AndroidApp";
 import FlyRight from "./components/FlyRight";
@@ -44,7 +44,7 @@ class App extends Component {
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/vms" component={Projects} />
             <Route path="/helicopter" component={Helicopter} />
-            <Route path="/website1" component={Website1} />
+            <Route path="/counselingwebapp" component={CounselingWebApp} />
             <Route path="/website2" component={Website2} />
             <Route path="/flyright" component={FlyRight} />
             <Route path="/androidapp" component={AndroidApp} />
