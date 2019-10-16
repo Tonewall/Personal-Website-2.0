@@ -77,6 +77,7 @@ class flyright extends React.Component {
                     <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                     <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                   </ol>
                   <div className="carousel-inner">
                     <div className="carousel-item active">
@@ -87,6 +88,9 @@ class flyright extends React.Component {
                     </div>
                     <div className="carousel-item">
                       <img className="d-block w-100" alt="carousel 3" src={require("../images/projects/flyright2.png")}></img>
+                    </div>
+                    <div className="carousel-item">
+                      <img className="d-block w-100" alt="carousel 4" src={require("../images/projects/flyright3.png")}></img>
                     </div>
                   </div>
                   <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
