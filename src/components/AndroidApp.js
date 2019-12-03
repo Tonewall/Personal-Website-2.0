@@ -49,6 +49,9 @@ class androidapp extends React.Component {
           <div className="card-header card-header-project">
             <ul className="nav nav-tabs card-header-tabs">
               <li className="nav-item">
+                <a className="nav-link" href="/rosie">Rosie</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/vms">VMS</a>
               </li>
               <li className="nav-item">
@@ -59,9 +62,6 @@ class androidapp extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link active" href="/androidapp">Android App</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/helicopter">Helicopter</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/website2">Website 2.0</a>

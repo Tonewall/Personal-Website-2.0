@@ -7,7 +7,7 @@ import Projects from "./components/Projects";
 import Contact from "./components/Contact";
 import Test from "./components/test";
 import AboutMe from "./components/AboutMe";
-import Helicopter from "./components/Helicopter";
+import Rosie from "./components/Rosie";
 import CounselingWebApp from "./components/CounselingWebApp";
 import Website2 from "./components/Website2";
 import AndroidApp from "./components/AndroidApp";
@@ -43,7 +43,7 @@ class App extends Component {
             <Route path="/test" component={Test} />
             <Route path="/aboutme" component={AboutMe} />
             <Route path="/vms" component={Projects} />
-            <Route path="/helicopter" component={Helicopter} />
+            <Route path="/rosie" component={Rosie} />
             <Route path="/counselingwebapp" component={CounselingWebApp} />
             <Route path="/website2" component={Website2} />
             <Route path="/flyright" component={FlyRight} />

@@ -9,7 +9,7 @@ class flyright extends React.Component {
     }
   }
   getTechnology() {
-    let techs = ["JavaScript", "HTML5", "CSS3", "Python", "Vue.js", "Django", "Bootstrap", "Node.js", "JQuery", "Git Version Control", "Visual Studio Code"]
+    let techs = ["JavaScript", "Python", "Vue.js", "Django", "Node.js", "JQuery", "Git Version Control"]
     const techList = techs.map((tech) =>
       <div>
         <li>{tech}</li>
@@ -50,6 +50,9 @@ class flyright extends React.Component {
           <div className="card-header card-header-project">
             <ul className="nav nav-tabs card-header-tabs">
               <li className="nav-item">
+                <a className="nav-link" href="/rosie">Rosie</a>
+              </li>
+              <li className="nav-item">
                 <a className="nav-link" href="/vms">VMS</a>
               </li>
               <li className="nav-item">
@@ -60,9 +63,6 @@ class flyright extends React.Component {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/androidapp">Android App</a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="/helicopter">Helicopter</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="/website2">Website 2.0</a>
